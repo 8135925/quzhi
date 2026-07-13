@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Material Design 3 全局样式 ===== */
+/* 颜色变量使用空格分隔的 RGB 通道值，以支持 Tailwind 的透明度修饰符 */
+
+@layer base {
+  :root {
+    /* 亮色模式变量 */
+    --md-bg: 254 247 255;
+    --md-on-background: 28 27 31;
+    --md-surface: 254 247 255;
+    --md-on-surface: 28 27 31;
+    --md-surface-variant: 231 224 236;
+    --md-on-surface-variant: 73 69 79;
+    --md-surface-container-lowest: 255 255 255;
+    --md-surface-container-low: 247 242 250;
+    --md-surface-container: 243 237 247;
+    --md-surface-container-high: 236 230 240;
+    --md-surface-container-highest: 230 224 233;
+    --md-primary: 103 80 164;
+    --md-on-primary: 255 255 255;
+    --md-primary-container: 234 221 255;
+    --md-on-primary-container: 33 0 93;
+    --md-secondary: 98 91 113;
+    --md-on-secondary: 255 255 255;
+    --md-secondary-container: 232 222 248;
+    --md-on-secondary-container: 29 25 43;
+    --md-tertiary: 125 82 96;
+    --md-on-tertiary: 255 255 255;
+    --md-tertiary-container: 255 216 228;
+    --md-on-tertiary-container: 49 17 29;
+    --md-error: 179 38 30;
+    --md-on-error: 255 255 255;
+    --md-error-container: 249 222 220;
+    --md-on-error-container: 65 14 11;
+    --md-outline: 121 116 126;
+    --md-outline-variant: 202 196 208;
+  }
+
+  .dark {
+    /* 暗色模式变量 - Material You 暗色色板 */
+    --md-bg: 20 18 24;
+    --md-on-background: 230 224 233;
+    --md-surface: 20 18 24;
+    --md-on-surface: 230 224 233;
+    --md-surface-variant: 73 69 79;
+    --md-on-surface-variant: 202 196 208;
+    --md-surface-container-lowest: 15 13 19;
+    --md-surface-container-low: 29 27 32;
+    --md-surface-container: 33 31 38;
+    --md-surface-container-high: 43 41 48;
+    --md-surface-container-highest: 54 52 59;
+    --md-primary: 208 188 255;
+    --md-on-primary: 56 30 114;
+    --md-primary-container: 79 55 139;
+    --md-on-primary-container: 234 221 255;
+    --md-secondary: 204 194 220;
+    --md-on-secondary: 51 45 65;
+    --md-secondary-container: 74 68 88;
+    --md-on-secondary-container: 232 222 248;
+    --md-tertiary: 239 184 200;
+    --md-on-tertiary: 73 37 50;
+    --md-tertiary-container: 99 59 72;
+    --md-on-tertiary-container: 255 216 228;
+    --md-error: 242 184 181;
+    --md-on-error: 96 20 16;
+    --md-error-container: 140 29 24;
+    --md-on-error-container: 249 222 220;
+    --md-outline: 147 143 153;
+    --md-outline-variant: 73 69 79;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Roboto', system-ui, sans-serif;
+    background-color: rgb(var(--md-bg));
+    color: rgb(var(--md-on-surface));
+    transition: background-color 0.3s cubic-bezier(0.2, 0, 0, 1), color 0.3s cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  /* 自定义滚动条 */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--md-surface-container-low));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--md-outline));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--md-primary));
+  }
+}
+
+@layer components {
+  /* Material You 药丸形按钮 */
+  .md-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300 ease-md active:scale-95;
+  }
+
+  .md-btn-filled {
+    @apply md-btn bg-md-primary text-md-on-primary hover:bg-md-primary/90 shadow-sm hover:shadow-md;
+  }
+
+  .md-btn-tonal {
+    @apply md-btn bg-md-secondary-container text-md-on-secondary-container hover:bg-md-secondary-container/90;
+  }
+
+  .md-btn-outlined {
+    @apply md-btn border border-md-outline text-md-primary hover:bg-md-primary/5;
+  }
+
+  .md-btn-text {
+    @apply md-btn text-md-primary hover:bg-md-primary/10;
+  }
+
+  /* Material You 卡片 */
+  .md-card {
+    @apply bg-md-surface-container rounded-lg p-6 shadow-sm transition-all duration-300 ease-md;
+  }
+
+  .md-card-interactive {
+    @apply md-card hover:shadow-md hover:scale-[1.02] cursor-pointer;
+  }
+
+  /* Material You 输入框 - 填充式文本字段 */
+  .md-input {
+    @apply h-14 w-full rounded-t-lg rounded-b-none bg-md-surface-container-low px-4 pt-4 text-md-on-surface border-b-2 border-md-outline focus:border-md-primary focus:outline-none transition-colors duration-200;
+  }
+
+  /* 软件列表项链接 */
+  .software-link {
+    @apply text-md-primary hover:underline transition-colors duration-200 font-medium;
+  }
+
+  /* 平台徽章 */
+  .platform-badge {
+    @apply inline-flex items-center text-xs text-md-on-surface-variant hover:text-md-primary transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  /* 有机模糊形状装饰 */
+  .blur-shape {
+    @apply absolute rounded-full blur-3xl opacity-20 pointer-events-none;
+  }
+
+  /* 渐变文字 */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(120deg, #6750A4, #7D5260);
+  }
+}

@@ -1,0 +1,75 @@
+# Graphics software
+
+## Image compression
+
+- [ImageOptim](https://imageoptim.com/mac) / [apple] / [github](https://github.com/ImageOptim/ImageOptim)
+- [Caesium Image Compressor](https://saerasoft.com/caesium/) / [github](https://github.com/Lymphatus/caesium-image-compressor)
+  - [CaesiumCLT](https://saerasoft.com/caesiumclt/) / [cli] / [github](https://github.com/Lymphatus/caesium-clt)
+  - [Caesium Web Image Compressor](https://caesium.app/) / [web] / [github](https://github.com/Lymphatus/caesium-app-web)
+- [Tiny Image](https://github.com/kyleduo/tinypng4mac) / [apple]
+- [Oxipng](https://github.com/oxipng/oxipng) / [cli]
+- [MAZANOKE](https://mazanoke.com/) / [web] / [github](https://github.com/civilblur/mazanoke)
+- [Squish](https://squish.addy.ie/) / [github](https://github.com/addyosmani/squish)
+- [PicSharp](https://github.com/AkiraBit/PicSharp)
+- [Rimage](https://github.com/vlad-salone/rimage) / [cli]
+  - [Rimage GUI](https://github.com/Mikachu2333/rimage_gui) / [windows]
+- [Curtail](https://github.com/Huluti/Curtail) / [linux]
+
+## Raster graphics editors
+
+- [GIMP](https://www.gimp.org/) / [github](https://github.com/gnome/gimp)
+- [Graphite](https://graphite.art/) / [web] / [github](https://github.com/GraphiteEditor/Graphite)
+- [JS Paint](https://jspaint.app/about) / [github](https://github.com/1j01/jspaint)
+- [PixiEditor](https://pixieditor.net/) / [github](https://github.com/PixiEditor/PixiEditor)
+- [VTracer](https://www.visioncortex.org/vtracer/) / [github](https://github.com/visioncortex/vtracer)
+- [Pinta](https://www.pinta-project.com/) / [github](https://github.com/PintaProject/Pinta)
+- [PhotoDemon](https://photodemon.org/) / [windows] / [github](https://github.com/tannerhelland/PhotoDemon)
+- [Raster Master](https://github.com/RetroNick2020/raster-master) / [windows]
+
+## Vector graphics editors
+
+- [Inkscape](https://inkscape.org/) / [gitlab](https://gitlab.com/inkscape/inkscape)
+- [GodSVG](https://www.godsvg.com/) / [github](https://github.com/MewPurPur/GodSVG)
+- [Glaxnimate](https://glaxnimate.org/) / [github](https://github.com/KDE/glaxnimate)
+
+## Image viewers
+
+- [ImageGlass](https://imageglass.org/) / [github](https://github.com/d2phap/imageglass)
+- [qView](https://interversehq.com/qview/) / [github](https://github.com/jurplel/qView)
+- [PicView](https://picview.org/) / [github](https://github.com/Ruben2776/PicView)
+- [qimgv](https://github.com/easymodo/qimgv)
+- [nomacs](https://nomacs.org/) / [github](https://github.com/nomacs/nomacs)
+- [void Image Viewer](https://github.com/voidtools/voidImageViewer) / [windows]
+- [tev](https://github.com/Tom94/tev) - High dynamic range (HDR) image viewer for people who care about colors
+- [FlowVision](https://flowvision.app/) - Waterfall-style image viewer for macOS / [apple] / [github](https://github.com/netdcy/FlowVision)
+- [JarkViewer](https://jark006.github.io/JarkViewer/) / [windows] / [github](https://github.com/jark006/jarkViewer)
+- [Quick Picture Viewer](https://moduleart.github.io/quickpictureviewer) / [windows] / [github](https://github.com/ModuleArt/quick-picture-viewer)
+- [ImageViewer](https://github.com/kopaka1822/ImageViewer) / [windows]
+- [PixelViewer](https://carinastudio.azurewebsites.net/PixelViewer/) / [github](https://github.com/carina-studio/PixelViewer)
+- [Simple Image Viewer](https://torum.github.io/Image-viewer/) / [github](https://github.com/torum/Image-viewer)
+
+## Screenshot software
+
+- [ShareX](https://getsharex.com/) / [windows] / [github](https://github.com/ShareX/ShareX)
+  - [SnapX](https://github.com/SnapXL/SnapX) / [linux]
+- [Flameshot](https://flameshot.org/) / [github](https://github.com/flameshot-org/flameshot)
+- [eSearch](https://esearch-app.netlify.app/) / [github](https://github.com/xushengfeng/eSearch)
+- [Greenshot](https://getgreenshot.org/) / [github](https://github.com/greenshot/greenshot/)
+- [Snow Shot](https://snowshot.top/) / [github](https://github.com/mg-chao/snow-shot)
+- [ksnip](http://ksnip.org/) / [github](https://github.com/ksnip/ksnip)
+- [Snippai](https://www.snippai.de/) / [github](https://github.com/xyTom/snippai)
+- [termshot](https://github.com/homeport/termshot) / [cli]
+- [ScrollSnap](https://github.com/Brkgng/ScrollSnap) / [apple]
+- [WinShot](https://winshot.claudekit.cc/) / [windows] / [github](https://github.com/mrgoonie/winshot)
+- [Auto Screenshot](https://artem78.github.io/AutoScreenshot/) / [github](https://github.com/artem78/AutoScreenshot)
+- [ZenShot](https://www.zenshot.cn/) / [github](https://github.com/easysoft/zenshot)
+- [MiniSnip](https://github.com/deminimis/MiniSnip) / [windows]
+
+## Image upscaling software
+
+- [Upscayl](https://upscayl.org/) / [github](https://github.com/upscayl/upscayl)
+- [Waifu2x-Extension-GUI](https://github.com/AaronFeng753/Waifu2x-Extension-GUI) / [windows]
+- [chaiNNer](https://chainner.app/) / [github](https://github.com/chaiNNer-org/chaiNNer)
+- [RealSR-NCNN-Android](https://github.com/tumuyan/RealSR-NCNN-Android) / [android]
+- [Real-ESRGAN GUI](https://akarin.dev/realesrgan-gui/) / [github](https://github.com/TransparentLC/realesrgan-gui)
+- [AI SuperResolution](https://github.com/X-Lucifer/X.SuperResolution) / [windows]
