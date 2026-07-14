@@ -7,7 +7,7 @@ export const changelogs = [
     date: '2026-07-13',
     title: { zh: 'React 版本首发', en: 'React version first release' },
     items: [
-      { zh: '使用 React 18 + Vite + Tailwind CSS 重构项目', en: 'Rebuilt with React 18 + Vite + Tailwind CSS' },
+      { zh: '本项目基于 React 18 + Vite + Tailwind CSS 技术栈构建', en: 'This project is built with React 18 + Vite + Tailwind CSS' },
       { zh: '实现 Material Design 3 设计系统', en: 'Implemented Material Design 3 design system' },
       { zh: '支持中英文双语切换', en: 'Bilingual Chinese/English support' },
       { zh: '支持深色/浅色主题切换', en: 'Dark/light theme switching' },

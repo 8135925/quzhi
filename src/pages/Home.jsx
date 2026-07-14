@@ -38,7 +38,7 @@ export default function Home() {
             <span>{lang === 'zh' ? '开始探索' : 'Get Started'}</span>
           </Link>
           <a
-            href="https://github.com"
+            href="https://github.com/8135925/quzhi"
             target="_blank"
             rel="noopener noreferrer"
             className="md-btn-outlined"
