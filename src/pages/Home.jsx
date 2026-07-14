@@ -37,15 +37,6 @@ export default function Home() {
             <i className="bi bi-rocket-takeoff-fill"></i>
             <span>{lang === 'zh' ? '开始探索' : 'Get Started'}</span>
           </Link>
-          <a
-            href="https://github.com/8135925/quzhi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="md-btn-outlined"
-          >
-            <i className="bi bi-github"></i>
-            <span>GitHub</span>
-          </a>
         </div>
       </section>
 

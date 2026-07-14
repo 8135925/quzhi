@@ -3,10 +3,13 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
 import { useTheme } from '../contexts/ThemeContext'
 import { categories, getNav } from '../data/navigation'
+import SearchBox from './SearchBox'
+
+const GITHUB_URL = 'https://github.com/8135925/quzhi'
 
 /**
  * 顶部导航栏组件
- * 包含 Logo、分类导航、语言切换、主题切换
+ * 包含 Logo、搜索框、分类导航、GitHub、语言切换、主题切换
  */
 export default function Header() {
   const { lang, toggleLang } = useLanguage()
@@ -20,7 +23,6 @@ export default function Header() {
     e.preventDefault()
     setMobileMenuOpen(false)
     if (item.items) {
-      // 分组项 - 切换到第一个分类
       navigate(`/category/${item.items[0].link}`)
     } else if (item.link === '') {
       navigate('/')
@@ -32,15 +34,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-md-surface/95 backdrop-blur-md border-b border-md-outline-variant">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 gap-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 text-md-primary font-bold text-xl">
+          <Link to="/" className="flex items-center gap-2 text-md-primary font-bold text-xl shrink-0">
             <i className="bi bi-stars text-2xl"></i>
-            <span>{lang === 'zh' ? '趣址' : 'QuZhi'}</span>
+            <span className="hidden sm:inline">{lang === 'zh' ? '趣址' : 'QuZhi'}</span>
           </Link>
 
+          {/* 搜索框 - 桌面端 */}
+          <SearchBox />
+
           {/* 桌面端导航 */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1 shrink-0">
             {navItems.map((item, index) => (
               <div key={index} className="relative group">
                 <a
@@ -69,7 +74,17 @@ export default function Header() {
           </nav>
 
           {/* 右侧操作 */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 shrink-0">
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="md-btn-text px-3 py-2"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <i className="bi bi-github text-lg"></i>
+            </a>
             <button
               onClick={toggleLang}
               className="md-btn-text px-3 py-2"
@@ -87,7 +102,7 @@ export default function Header() {
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md-btn-text px-3 py-2 md:hidden"
+              className="md-btn-text px-3 py-2 lg:hidden"
               aria-label="菜单"
             >
               <i className={`bi ${mobileMenuOpen ? 'bi-x-lg' : 'bi-list'}`}></i>
@@ -97,7 +112,7 @@ export default function Header() {
 
         {/* 移动端菜单 */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-md-outline-variant">
+          <nav className="lg:hidden py-4 border-t border-md-outline-variant">
             {navItems.map((item, index) => (
               <div key={index}>
                 <a
